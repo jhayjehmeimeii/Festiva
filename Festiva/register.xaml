@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Festiva.register"
+             Title="register"
+             BackgroundImageSource="festiva_bg.png" >
+
+    <VerticalStackLayout Padding="20, 30, 20, 500" Spacing="10">
+
+        <Image Source="festiva_logo.png" HeightRequest="120" HorizontalOptions="Center" />
+
+        <Label Text="Register" HeightRequest="50" HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,50,0,0"/>
+
+        <Label Padding="1" Text="Firstname" />
+        <Frame BackgroundColor="White" CornerRadius="20" Padding="0" BorderColor="Gray" HeightRequest="40">
+            <Entry x:Name="EntryFirstname" BackgroundColor="Transparent" Placeholder="Enter your first name"/>
+        </Frame>
+
+        <Label Padding="1" Text="Lastname" />
+        <Frame BackgroundColor="White" CornerRadius="20" Padding="0" BorderColor="Gray" HeightRequest="40">
+            <Entry x:Name="EntryLastname" BackgroundColor="Transparent" Placeholder="Enter your last name"/>
+        </Frame>
+
+        <Label Padding="1" Text="Tel" />
+        <Frame BackgroundColor="White" CornerRadius="20" Padding="0" BorderColor="Gray" HeightRequest="40">
+            <Entry x:Name="EntryTel" BackgroundColor="Transparent" Placeholder="Enter your phone number"/>
+        </Frame>
+
+        <Label Padding="1" Text="E-mail" />
+        <Frame BackgroundColor="White" CornerRadius="20" Padding="0" BorderColor="Gray" HeightRequest="40">
+            <Entry x:Name="EntryEmail" BackgroundColor="Transparent" Placeholder="Enter your e-mail"/>
+        </Frame>
+
+        <Label Padding="1" Text="Password" />
+        <Frame BackgroundColor="White" CornerRadius="20" Padding="0" BorderColor="Gray" HeightRequest="40">
+            <Entry x:Name="EntryPassword" BackgroundColor="Transparent" Placeholder="Enter your password"/>
+        </Frame>
+
+        <Button Text="Create" 
+        Clicked="Button_Clicked" 
+        HeightRequest="40" 
+        WidthRequest="150" 
+        BackgroundColor="#f857b5" 
+        TextColor="#fffcef"
+        CornerRadius="20" 
+        Padding="10"
+        Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>
